@@ -39,3 +39,29 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+/*----------------------------------*/
+@media (min-width: 768px) {
+    .product-hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 40px;
+        align-items: start;
+        margin-bottom: 4rem;
+    }
+
+    .product-detail-container {
+        padding: 3rem 10%;
+    }
+
+    .back-link {
+        margin-bottom: 2rem;
+        display: inline-block;
+        text-decoration: none;
+        color: var(--text-dark);
+    }
+}
+@keyframes pulse-stock {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+}
