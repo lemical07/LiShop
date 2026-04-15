@@ -23,6 +23,15 @@
     font-weight: bold;
     margin: 0;
 }
+.logo-link{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+.logo-link :hover{
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
 .icon{
     width: 100px;
     height: 100px;
@@ -60,3 +69,79 @@
     display: none;
 }
 /*-------------------------*/
+
+.catalogo-container {
+    padding: 1.5rem;
+}
+
+.catalogo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.btn-filter {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.btn-close-filter{
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+    transition: background 0.3s ease;
+}
+.btn-close-filter:hover {
+    background-color: var(--secondary-color);
+}
+.filter-checkbox {
+    display: none;
+}
+
+.filters-sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    width: 80%;
+    height: 100%;
+    background: var(--white);
+    z-index: 1000;
+    padding: 2rem;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(121, 31, 31, 0.1);
+}
+
+.filter-checkbox:checked ~ .catalogo-layout .filters-sidebar {
+    left: 0;
+}
+
+.filter-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    line-height: 1.2; 
+}
+/*------------------------------------*/

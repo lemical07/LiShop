@@ -14,3 +14,28 @@
         margin: 0 auto;
     }
 }
+/*----------------------------*/
+@media (min-width: 768px) {
+    .catalogo-layout {
+        display: grid;
+        grid-template-columns: 250px 1fr; 
+        gap: 30px;
+    }
+
+    .filters-sidebar {
+        position: static; 
+        width: 100%;
+        left: 0;
+        padding: 0;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .btn-filter, .btn-close-filter {
+        display: none; 
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
