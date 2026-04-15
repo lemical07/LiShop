@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #6c5ce7; /* Violeta principal */
+    --secondary-color: #a29bfe; /* Violeta claro */
+    --accent-color: #00cec9; /* Un toque de azul/jade para contraste */
+    --bg-light: #f9f9fb;
+    --text-dark: #2d3436;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --border-radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    
+}
+a:focus, button:focus, input:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}

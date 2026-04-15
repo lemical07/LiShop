@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 25px;
+    }
+
+    .main-header {
+        padding: 1.5rem 5rem;
+    }
+
+    .search-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
