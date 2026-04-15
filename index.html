@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LíShop</title>
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/component.css">
+    <link rel="stylesheet" href="./CSS/layout.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="./IMG/logo.png" alt="LÍSEL">
+            <p>Lí<span>Shop</span></p>
+        </div>
+        <nav class="navbar">
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" class="menu-icon">
+                <img src="./IMG/icon.png" alt="Menú" class="icon-img">
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html" class="none-decoration-text">Página Principal</a></li>
+                <li><a href="catalogo.html" class="none-decoration-text">Catálogo</a></li>
+                <li><a href="checkout.html" class="none-decoration-text">Informe de Entrega</a></li>
+                <li><a href="carrito.html" class="none-decoration-text">Carrito</a></li>
+                <li><a href="producto.html" class="none-decoration-text">Producto</a></li>
+                <li><a href="perfil.html" class="none-decoration-text">Perfil</a></li>
+                <li><a href="historial.html" class="none-decoration-text">Historial</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <section class="search-container">
+            <input type="text" placeholder="Buscar productos, marcas...">
+        </section>
+    
+        <section class="categories">
+            <h2>Categorías</h2>
+            <div class="category-list">
+                <a href="catalogo.html" class="category-item">Abrigos</a>
+                <a href="catalogo.html" class="category-item">Camisas</a>
+                <a href="catalogo.html" class="category-item">Pantalones</a>
+            </div>
+        </section>
+    
+        <section class="featured">
+            <h2>Destacados</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="./IMG/Chesterfield.png" alt="Producto">
+                    <div class="card-info">
+                        <h3>Chesterfield</h3>
+                        <p class="price">3,500 GTQ</p>
+                        <a href="catalogo.html">
+                            <button class="btn-add">Ver más</button>
+                        </a>                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./IMG/Jacquard.png" alt="Producto">
+                    <div class="card-info">
+                        <h3>Jacquard</h3>
+                        <p class="price">1,800 GTQ</p>
+                        <a href="catalogo.html">
+                            <button class="btn-add">Ver más</button>
+                        </a>                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./IMG/Polo-Coat.png" alt="Producto">
+                    <div class="card-info">
+                        <h3>Polo Coat</h3>
+                        <p class="price">5,500 GTQ</p>
+                        <a href="catalogo.html">
+                            <button class="btn-add">Ver más</button>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
