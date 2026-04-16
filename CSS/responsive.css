@@ -103,3 +103,37 @@
         top: 20px;
     }
 }
+@media (min-width: 768px) {
+    .order-card {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .order-status {
+        justify-self: end;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-container {
+        padding-top: 4rem;
+    }
+    
+    .profile-hero {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 30px;
+        background: var(--white);
+        padding: 2rem;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+    }
+    
+    .profile-avatar {
+        margin: 0;
+    }
+}
