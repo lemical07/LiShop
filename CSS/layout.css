@@ -342,3 +342,40 @@
     background-color: #f3f0ff;
 }
 /*-----------------------------------*/
+.history-container {
+    padding: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.history-header {
+    margin-bottom: 2rem;
+}
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.order-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border-left: 5px solid #ddd; /* Barra lateral decorativa */
+    transition: transform 0.2s ease;
+}
+.order-card:hover {
+    transform: scale(1.02);
+}
+.order-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+.order-id {
+    font-weight: bold;
+    color: var(--text-dark);
+}
+/*-----------------------------------*/
+    

@@ -170,3 +170,29 @@
     box-shadow: var(--shadow);
 }
 /*-------------------------*/
+.order-status {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.status-delivered {
+    background-color: #e6fffa;
+    color: #2d6a4f;
+    border: 1px solid #b2f5ea;
+}
+.status-pending {
+    background-color: #fffaf0;
+    color: #9c4221;
+    border: 1px solid #feebc8;
+}
+.order-card:has(.status-delivered) {
+    border-left-color: #38a169;
+}
+
+.order-card:has(.status-pending) {
+    border-left-color: #ed8936;
+}
+/*-------------------------*/
